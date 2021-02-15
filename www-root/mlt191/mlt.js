@@ -23,7 +23,6 @@
 				root.style.cssText = "display: block; position: absolute; bottom: -1px; left: -1px; width: 0; height: 0; overflow: hidden;";
 				document.body.append(root);
 				this.root = root;
-				// start download
 				return fetch(href, {
 					mode: "cors",
 					credentials: "omit"
