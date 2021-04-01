@@ -1,7 +1,7 @@
 (self.MLT = self.MLT || (function(){
 	function log(){
 		const x = Array.from(arguments);
-		x[0] = "MLT: " + x[0];
+		x.unshift("MLT: ");
 		console.log.apply(console, x);
 	}
 	

@@ -1,11 +1,11 @@
 function log(){
 	const x = Array.from(arguments);
-	x[0] = "MLT: " + x[0];
+	x.unshift("MLT: ");
 	console.log.apply(console, x);
 }
 function err(){
 	const x = Array.from(arguments);
-	x[0] = "MLT: " + x[0];
+	x.unshift("MLT: ");
 	console.error.apply(console, x);
 }
 
